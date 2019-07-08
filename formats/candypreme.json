@@ -1,0 +1,36 @@
+{
+  "Profile Name 1": {
+    "addressLine1": "Shipping Address 1a",
+    "addressLine2": "Shipping Address 1b",
+    "billingCVV": "123",
+    "billingCardNumber": "1234567889102345",
+    "billingCardType": "visa",
+    "billingExpMonth": "04",
+    "billingExpYear": "2025",
+    "billingName": "Joseph Bravo",
+    "city": "Los Angeles",
+    "country": "USA",
+    "email": "EmailAddress1@gmail.com",
+    "fullName": "Shipping First Name Shipping Last Name",
+    "phoneNumber": "1234567890",
+    "state": "CA",
+    "zipCode": "12345"
+  },
+  "Profile Name 2": {
+    "addressLine1": "Shipping Address 2a",
+    "addressLine2": "Billing Address 2b",
+    "billingCVV": "456",
+    "billingCardNumber": "1234567889102345",
+    "billingCardType": "master",
+    "billingExpMonth": "12",
+    "billingExpYear": "2023",
+    "billingName": "Anthony Charlie",
+    "city": "New York",
+    "country": "USA",
+    "email": "anthonycharlie@gmail.com",
+    "fullName": "Anthony Charlie",
+    "phoneNumber": "2345678910",
+    "state": "NY",
+    "zipCode": "98765"
+  }
+}

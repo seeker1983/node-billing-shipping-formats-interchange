@@ -1,0 +1,42 @@
+{
+  "settings": {
+    "webhook": "",
+    "twocap": ""
+  },
+  "profiles": [
+    {
+      "profile_name": "Profile Name 1",
+      "profile[flName]": "Shipping First Name Shipping Last Name",
+      "profile[email]": "EmailAddress1@gmail.com",
+      "profile[phone]": "1234567890",
+      "profile[address1]": "Shipping Address 1a",
+      "profile[address2]": "Shipping Address 1b",
+      "profile[zipCode]": "12345",
+      "profile[city]": "Los Angeles",
+      "profile[state]": "CA",
+      "profile[country]": "US",
+      "card[number]": "1234 5678 8910 2345",
+      "card[month]": "04",
+      "card[year]": "25",
+      "card[cvv]": "123",
+      "card[type]": "visa"
+    },
+    {
+      "profile_name": "Profile Name 2",
+      "profile[flName]": "Anthony Charlie",
+      "profile[email]": "anthonycharlie@gmail.com",
+      "profile[phone]": "2345678910",
+      "profile[address1]": "Shipping Address 2a",
+      "profile[address2]": "Billing Address 2b",
+      "profile[zipCode]": "98765",
+      "profile[city]": "New York",
+      "profile[state]": "NY",
+      "profile[country]": "US",
+      "card[number]": "1234 5678 8910 2345",
+      "card[month]": "12",
+      "card[year]": "23",
+      "card[cvv]": "456",
+      "card[type]": "mastercard"
+    }
+  ]
+}

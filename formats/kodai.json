@@ -1,0 +1,70 @@
+{
+  "Profile Name 1": {
+    "billingAddress": {
+      "address": "Shipping Address 1a",
+      "apt": "Shipping Address 1b",
+      "city": "Los Angeles",
+      "firstName": "ShippingFirst",
+      "lastName": "Name",
+      "phoneNumber": "1234567890",
+      "state": "California",
+      "zipCode": "12345"
+    },
+    "deliveryAddress": {
+      "address": "Shipping Address 1a",
+      "apt": "Shipping Address 1b",
+      "city": "Los Angeles",
+      "firstName": "ShippingFirst",
+      "lastName": "Name",
+      "phoneNumber": "1234567890",
+      "state": "California",
+      "zipCode": "12345"
+    },
+    "miscellaneousInformation": {
+      "deliverySameAsBilling": true
+    },
+    "paymentDetails": {
+      "cardHolder": "Joseph Bravo",
+      "cardNumber": "1234567889102345",
+      "cvv": "123",
+      "emailAddress": "EmailAddress1@gmail.com",
+      "expirationDate": "04/25"
+    },
+    "profileName": "Profile Name 1",
+    "region": "United States"
+  },
+  "Profile Name 2": {
+    "billingAddress": {
+      "address": "Shipping Address 2a",
+      "apt": "Billing Address 2b",
+      "city": "New York",
+      "firstName": "Anthony",
+      "lastName": "Charlie",
+      "phoneNumber": "2345678910",
+      "state": "New York",
+      "zipCode": "98765"
+    },
+    "deliveryAddress": {
+      "address": "Billing Address 2a",
+      "apt": "Billing Address 2b",
+      "city": "Los Angeles",
+      "firstName": "Anthony",
+      "lastName": "Charlie",
+      "phoneNumber": "2345678910",
+      "state": "California",
+      "zipCode": "20359"
+    },
+    "miscellaneousInformation": {
+      "deliverySameAsBilling": false
+    },
+    "paymentDetails": {
+      "cardHolder": "Anthony Charlie",
+      "cardNumber": "1234567889102345",
+      "cvv": "456",
+      "emailAddress": "anthonycharlie@gmail.com",
+      "expirationDate": "12/23"
+    },
+    "profileName": "Profile Name 2",
+    "region": "United States"
+  }
+}

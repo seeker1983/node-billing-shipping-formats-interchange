@@ -1,0 +1,16 @@
+{
+  "name": "converter",
+  "version": "1.0.0",
+  "description": "Convert various formats.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fast-csv": "^3.0.1",
+    "json2csv": "^4.5.2",
+    "xml2js": "^0.4.19"
+  }
+}

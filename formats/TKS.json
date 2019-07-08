@@ -1,0 +1,84 @@
+{
+  "Profiles": [
+    {
+      "Id": "7691320a-47f6-49a1-8948-c2a0dd827a63",
+      "Name": "Profile Name 1",
+      "Billing": {
+        "Email": "EmailAddress1@gmail.com",
+        "FirstName": "ShippingFirst",
+        "Lastname": "Name",
+        "AddressLine1": "Shipping Address 1a",
+        "AddressLine2": "Shipping Address 1b",
+        "Zip": "12345",
+        "City": "Los Angeles",
+        "CountryCode": "US",
+        "StateCode": "CA",
+        "Phone": "1234567890"
+      },
+      "Shipping": {
+        "Email": "Email Address 1",
+        "FirstName": "ShippingFirst",
+        "Lastname": "Name",
+        "AddressLine1": "Shipping Address 1a",
+        "AddressLine2": "Shipping Address 1b",
+        "Zip": "12345",
+        "City": "Los Angeles",
+        "CountryCode": "US",
+        "StateCode": "CA",
+        "Phone": "1234567890"
+      },
+      "Payment": {
+        "CardHolder": "Joseph Bravo",
+        "CardNumber": "1234567889102345",
+        "ExpirationMonth": "04",
+        "ExpirationYear": "2025",
+        "SecurityCode": "123",
+        "CardType": 0
+      },
+      "Options": {
+        "UseBillingForShipping": true,
+        "OneItemPerWebsite": false
+      }
+    },
+    {
+      "Id": "787ddbe4-ddcb-4ffa-bdfa-12c11cdaf6f8",
+      "Name": "Profile Name 2",
+      "Billing": {
+        "Email": "anthonycharlie@gmail.com",
+        "FirstName": "Anthony",
+        "Lastname": "Charlie",
+        "AddressLine1": "Shipping Address 2a",
+        "AddressLine2": "Billing Address 2b",
+        "Zip": "98765",
+        "City": "New York",
+        "CountryCode": "US",
+        "StateCode": "NY",
+        "Phone": "2345678910"
+      },
+      "Shipping": {
+        "Email": "anthonycharlie@gmail.com",
+        "FirstName": "Anthony",
+        "Lastname": "Charlie",
+        "AddressLine1": "Billing Address 2a",
+        "AddressLine2": "Billing Address 2b",
+        "Zip": "20359",
+        "City": "Los Angeles",
+        "CountryCode": "US",
+        "StateCode": "CA",
+        "Phone": "2345678910"
+      },
+      "Payment": {
+        "CardHolder": "Anthony Charlie",
+        "CardNumber": "1234567889102345",
+        "ExpirationMonth": "12",
+        "ExpirationYear": "2023",
+        "SecurityCode": "456",
+        "CardType": 1
+      },
+      "Options": {
+        "UseBillingForShipping": false,
+        "OneItemPerWebsite": true
+      }
+    }
+  ]
+}

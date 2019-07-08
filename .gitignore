@@ -1,0 +1,5 @@
+output/
+*.sublime-*
+variants.txt
+newmap.txt
+node_modules/

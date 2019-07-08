@@ -1,0 +1,62 @@
+[
+  {
+    "Billing": {
+      "Address": "Shipping Address 1a",
+      "Apt": "Shipping Address 1b",
+      "City": "Los Angeles",
+      "FirstName": "ShippingFirst",
+      "LastName": "Name",
+      "State": "CA",
+      "Zip": "12345"
+    },
+    "CCNumber": "1234567889102345",
+    "CVV": "123",
+    "CardType": "visa",
+    "Country": "US",
+    "Email": "EmailAddress1@gmail.com",
+    "ExpMonth": "04",
+    "ExpYear": "2025",
+    "Name": "Profile Name 1",
+    "Phone": "1234567890",
+    "Same": true,
+    "Shipping": {
+      "Address": "Shipping Address 1a",
+      "Apt": "Shipping Address 1b",
+      "City": "Los Angeles",
+      "FirstName": "ShippingFirst",
+      "LastName": "Name",
+      "State": "CA",
+      "Zip": "12345"
+    }
+  },
+  {
+    "Billing": {
+      "Address": "Shipping Address 2a",
+      "Apt": "Billing Address 2b",
+      "City": "New York",
+      "FirstName": "Anthony",
+      "LastName": "Charlie",
+      "State": "NY",
+      "Zip": "98765"
+    },
+    "CCNumber": "1234567889102345",
+    "CVV": "456",
+    "CardType": "master",
+    "Country": "US",
+    "Email": "anthonycharlie@gmail.com",
+    "ExpMonth": "12",
+    "ExpYear": "2023",
+    "Name": "Profile Name 2",
+    "Phone": "2345678910",
+    "Same": false,
+    "Shipping": {
+      "Address": "Billing Address 2a",
+      "Apt": "Billing Address 2b",
+      "City": "Los Angeles",
+      "FirstName": "Anthony",
+      "LastName": "Charlie",
+      "State": "CA",
+      "Zip": "20359"
+    }
+  }
+]

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ArrayOfProfile>
+    <Profile>
+        <ProfileName>Profile Name 1 XML</ProfileName>
+        <BillingFirstName>ShippingFirst</BillingFirstName>
+        <BillingLastName>Name</BillingLastName>
+        <BillingAddressLine1>Shipping Address 1a</BillingAddressLine1>
+        <BillingAddressLine2>Shipping Address 1b</BillingAddressLine2>
+        <BillingCity>Los Angeles</BillingCity>
+        <BillingState>CA</BillingState>
+        <BillingCountryCode>US</BillingCountryCode>
+        <BillingZip>12345</BillingZip>
+        <BillingPhone>1234567890</BillingPhone>
+        <BillingEmail>EmailAddress1@gmail.com</BillingEmail>
+        <ShippingFirstName>ShippingFirst</ShippingFirstName>
+        <ShippingLastName>Name</ShippingLastName>
+        <ShippingAddressLine1>Shipping Address 1a</ShippingAddressLine1>
+        <ShippingAddressLine2>Shipping Address 1b</ShippingAddressLine2>
+        <ShippingCity>Los Angeles</ShippingCity>
+        <ShippingState>CA</ShippingState>
+        <ShippingCountryCode>US</ShippingCountryCode>
+        <ShippingZip>12345</ShippingZip>
+        <ShippingPhone>1234567890</ShippingPhone>
+        <ShippingEmail>Email Address 1</ShippingEmail>
+        <NameOnCard>Joseph Bravo</NameOnCard>
+        <CreditCardNumber>1234567889102345</CreditCardNumber>
+        <ExpirationMonth>04</ExpirationMonth>
+        <ExpirationYear>2025</ExpirationYear>
+        <Cvv>123</Cvv>
+        <CardType>Visa</CardType>
+        <OneCheckoutPerWebsite>false</OneCheckoutPerWebsite>
+        <SameBillingShipping>true</SameBillingShipping>
+        <BirthDay>25</BirthDay>
+        <BirthMonth>12</BirthMonth>
+        <BirthYear>1989</BirthYear>
+    </Profile>
+    <Profile>
+        <ProfileName>Profile Name 2</ProfileName>
+        <BillingFirstName>Anthony</BillingFirstName>
+        <BillingLastName>Charlie</BillingLastName>
+        <BillingAddressLine1>Shipping Address 2a</BillingAddressLine1>
+        <BillingAddressLine2>Billing Address 2b</BillingAddressLine2>
+        <BillingCity>New York</BillingCity>
+        <BillingState>NY</BillingState>
+        <BillingCountryCode>US</BillingCountryCode>
+        <BillingZip>98765</BillingZip>
+        <BillingPhone>2345678910</BillingPhone>
+        <BillingEmail>anthonycharlie@gmail.com</BillingEmail>
+        <ShippingFirstName>Anthony</ShippingFirstName>
+        <ShippingLastName>Charlie</ShippingLastName>
+        <ShippingAddressLine1>Billing Address 2a</ShippingAddressLine1>
+        <ShippingAddressLine2>Billing Address 2b</ShippingAddressLine2>
+        <ShippingCity>Los Angeles</ShippingCity>
+        <ShippingState>CA</ShippingState>
+        <ShippingCountryCode>US</ShippingCountryCode>
+        <ShippingZip>20359</ShippingZip>
+        <ShippingPhone>2345678910</ShippingPhone>
+        <ShippingEmail>anthonycharlie@gmail.com</ShippingEmail>
+        <NameOnCard>Anthony Charlie</NameOnCard>
+        <CreditCardNumber>1234567889102345</CreditCardNumber>
+        <ExpirationMonth>12</ExpirationMonth>
+        <ExpirationYear>2023</ExpirationYear>
+        <Cvv>456</Cvv>
+        <CardType>MasterCard</CardType>
+        <OneCheckoutPerWebsite>true</OneCheckoutPerWebsite>
+        <SameBillingShipping>false</SameBillingShipping>
+        <BirthDay>25</BirthDay>
+        <BirthMonth>12</BirthMonth>
+        <BirthYear>1989</BirthYear>
+    </Profile>
+</ArrayOfProfile>

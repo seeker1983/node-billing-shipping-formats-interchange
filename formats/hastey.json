@@ -1,0 +1,38 @@
+[
+  {
+    "__profile__name": "Profile Name 1",
+    "address": "Shipping Address 1a",
+    "address_2": "Shipping Address 1b",
+    "cardType": "visa",
+    "cc_cvv": "123",
+    "cc_month": "04",
+    "cc_year": "2025",
+    "cc_number": "1234567889102345",
+    "city": "Los Angeles",
+    "country": "USA",
+    "email": "EmailAddress1@gmail.com",
+    "id": "e4cf0c36-cd55-441e-90c4-fabf7abca9ec",
+    "name": "Shipping First Name Shipping Last Name",
+    "state": "CA",
+    "tel": "1234567890",
+    "zip": "12345"
+  },
+  {
+    "__profile__name": "Profile Name 2",
+    "address": "Shipping Address 2a",
+    "address_2": "Billing Address 2b",
+    "cardType": "master",
+    "cc_cvv": "456",
+    "cc_month": "12",
+    "cc_year": "2023",
+    "cc_number": "1234567889102345",
+    "city": "New York",
+    "country": "USA",
+    "email": "anthonycharlie@gmail.com",
+    "id": "c52e2459-9756-4097-8267-24d68c7825df",
+    "name": "Anthony Charlie",
+    "state": "NY",
+    "tel": "2345678910",
+    "zip": "98765"
+  }
+]
