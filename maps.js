@@ -1,5 +1,4 @@
 var _ = require('lodash');
-function xd(v){console.log(v); process.exit();}
 
 const Empty = {type:'default', value: ''};
 const ProfileName = 'ProfileName'

@@ -6,8 +6,6 @@ const xml2js = require('xml2js');
 const xmlParser = (new xml2js.Parser({ attrkey: "ATTR"})).parseString;
 const jsonCSVParser = require('json2csv').parse;
 
-function xd(v){console.log(v); process.exit();}
-
 const io = {
 	csv : {
 		load: function (fileName, cb) {

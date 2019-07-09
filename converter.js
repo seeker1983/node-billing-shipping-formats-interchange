@@ -74,7 +74,7 @@ const formats = {
 		},
 
 		saveFile: function (fileName, data) {
-			var raw = data.map(JSON.stringify).join(';')
+			var raw = data.map(item => JSON.stringify(item, null, 2)).join(';')
 			fs.writeFileSync(fileName, raw);
 		}
 	},
@@ -144,14 +144,7 @@ function fromDefault(def, map) {
 	return output;
 }
 
-function xd(v){console.log(v); process.exit();}
-
-identity = x => x;
-
 function convert(sourceFile, targetFile, sourceFormatName, targetFormatName) {
-
-//	io.csv.load('formats/anbaio.csv', xd)
-
 	if(!formats.hasOwnProperty(sourceFormatName))
 		throw('Unknown format' + sourceFormatName);
 	if(!formats.hasOwnProperty(targetFormatName))
@@ -160,15 +153,13 @@ function convert(sourceFile, targetFile, sourceFormatName, targetFormatName) {
 	let targetFormat = formats[targetFormatName];
 	let sourceMap = maps[sourceFormatName];
 	let targetMap = maps[targetFormatName];
-	let packer = targetMap.pack || identity;
-	let unpacker = sourceMap.unpack || identity;
 
 	sourceFormat.loadFile(sourceFile, function(sourceDataRaw) {
 		sourceData = sourceMap.hasOwnProperty('unpack') ? sourceMap.unpack(sourceDataRaw) : sourceDataRaw;
 		var defaultData = sourceData.map((row) => maps[sourceFormatName].intoDefault(row, maps[sourceFormatName]));
 		var resultDataRaw =  defaultData.map((row) => maps[targetFormatName].fromDefault(row, maps[targetFormatName]));
 		resultData = targetMap.hasOwnProperty('pack') ? targetMap.pack(resultDataRaw) : resultDataRaw;
-		console.log(resultData)
+		//console.log(resultData)
 		targetFormat.saveFile(targetFile, resultData)
 
 	})
