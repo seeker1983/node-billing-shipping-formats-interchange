@@ -1,29 +1,31 @@
 ## Format converter
 Nodejs based converter for various formats.
 Supported formats:
-		- NSB                formats/NSB.json
-		- cyber              formats/cyber.json
-		- prism              formats/prism.json
-		- TKS                formats/TKS.json
-		- dashev3            formats/dashev3.json
-		- profiles           formats/profiles.json
-		- aiomoji            formats/aiomoji.csv
-		- eveaio             formats/eveaio.xml
-		- sneaker_copter     formats/sneaker_copter.csv
-		- anbaio             formats/anbaio.csv
-		- hastey             formats/hastey.json
-		- sole_terminator    formats/sole_terminator.json
-		- balko              formats/balko.json
-		- kodai              formats/kodai.json
-		- soleaio            formats/soleaio.json
-		- bnb                formats/bnb.txt
-		- oculus             formats/oculus.json
-		- whatbot            formats/whatbot.db
-		- candypreme         formats/candypreme.json
-		- pd                 formats/pd.json
-		- yitan              formats/yitan.zip
-		- cinnasole          formats/cinnasole.json
-		- phantom            formats/phantom.json
+
+	NSB                formats/NSB.json
+	cyber              formats/cyber.json
+	prism              formats/prism.json
+	TKS                formats/TKS.json
+	dashev3            formats/dashev3.json
+	profiles           formats/profiles.json
+	aiomoji            formats/aiomoji.csv
+	eveaio             formats/eveaio.xml
+	sneaker_copter     formats/sneaker_copter.csv
+	anbaio             formats/anbaio.csv
+	hastey             formats/hastey.json
+	sole_terminator    formats/sole_terminator.json
+	balko              formats/balko.json
+	kodai              formats/kodai.json
+	soleaio            formats/soleaio.json
+	bnb                formats/bnb.txt
+	oculus             formats/oculus.json
+	whatbot            formats/whatbot.db
+	candypreme         formats/candypreme.json
+	pd                 formats/pd.json
+	yitan              formats/yitan.zip
+	cinnasole          formats/cinnasole.json
+	phantom            formats/phantom.json
+
 ### Prerequisites
 - [node.js](https://nodejs.org)
 - [git](https://git-scm.com/downloads)
