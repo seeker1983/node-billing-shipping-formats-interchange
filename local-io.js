@@ -1,3 +1,4 @@
+const JSZip = require("jszip");
 const csv = require('fast-csv');
 const fs = require('fs');
 const unzip = require('unzip');
@@ -101,8 +102,26 @@ const io = {
 				.on('close', () => cb(items))
 		},
 		save: function (fileName, data) {
-			throw 'Implement';
-		}
+			var zip = new JSZip();
+			 
+			function makeid(length) {
+			   var result           = '';
+			   var characters       = 'abcdefghijklmnopqrstuvwxyz0123456789';
+			   var charactersLength = characters.length;
+			   for ( var i = 0; i < length; i++ ) {
+			      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+			   }
+			   return result;
+			}
+
+			data.map(item => zip.file(makeid(9) + '.json', JSON.stringify(item, null, 2)))
+
+			zip.generateNodeStream({type:'nodebuffer',streamFiles:true})
+			   .pipe(fs.createWriteStream(fileName))
+			   .on('finish', function () {
+			       //console.log(fileName + " written.");
+			    });
+    		}
 	}
 }
 
