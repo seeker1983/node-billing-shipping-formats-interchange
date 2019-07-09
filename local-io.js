@@ -1,5 +1,6 @@
 const csv = require('fast-csv');
 const fs = require('fs');
+const unzip = require('unzip');
 const xml2js = require('xml2js');
 const xmlParser = (new xml2js.Parser({ attrkey: "ATTR"})).parseString;
 const jsonCSVParser = require('json2csv').parse;
@@ -42,25 +43,20 @@ const io = {
 
 		save: function (fileName, data) {
 			var json = JSON.stringify(data, null, 2);
-			//xd([data,json])
 			fs.writeFileSync(fileName, json);
 		}
 	},
 
 	db: {
 		load: function (fileName, cb) {
-			throw 'Implement';
-			let data = fs.readFileSync(fileName);
-			let json = JSON.parse(data);
-
+			let s = fs.readFileSync(fileName, 'utf-8');
+			let lines = s.split('\n');
+			let json = lines.map(JSON.parse);
 			cb(json);
-
-			return json;
 		},
 
 		save: function (fileName, data) {
-			throw 'Implement';
-			let json = JSON.stringify(data, null, 2);
+			let json = data.map(JSON.stringify).join('\n');
 			fs.writeFileSync(fileName, json);
 		}
 	},
@@ -79,12 +75,30 @@ const io = {
 			});
 		},
 		save: function (fileName, data) {
-			throw 'Implement';
+			var builder = new xml2js.Builder();
+			var xml = builder.buildObject(data);
+			fs.writeFileSync(fileName, xml);
 		}
 	},
 	zip : {
 		load: function (fileName, cb) {
-			throw 'Implement';
+			var items = [];
+			fs.createReadStream(fileName)
+				.pipe(unzip.Parse())
+				.on('entry', function (entry) {
+					if (entry.path.match(/\.json$/)) {
+					  var s = '';
+					  entry
+						  .on('data', chunk => s += chunk)
+						  .on('end', () => {
+						  	items.push(JSON.parse(s));
+						  })
+					  ;
+					} else {
+					  entry.autodrain();
+					}
+				})
+				.on('close', () => cb(items))
 		},
 		save: function (fileName, data) {
 			throw 'Implement';

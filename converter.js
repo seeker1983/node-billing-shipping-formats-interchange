@@ -1,6 +1,7 @@
 const io = require('./local-io');
 const fs = require('fs');
 const maps = require('./maps');
+const jsonCSVParser = require('json2csv').parse;
 
 const formats = {
 	'aiomoji' : {
@@ -78,8 +79,29 @@ const formats = {
 		}
 	},
 	'sneaker_copter' : {
-		loadFile: io.csv.load,
-		saveFile: io.csv.save
+		loadFile: function (fileName, cb) {
+			var origCSV = fs.readFileSync(fileName);
+			var headers = [ 'ProfileName', 'StateBilling', 'Address1Shipping', 'Address1Billing', 'CityBilling', 'FirstNameBilling', 'LastNameBilling', 'PhoneBilling', 'ZipCodeBilling', 'CountryBilling', 'CardSecurityCode', 'CardNumber', 'CardExpirationMonth', 'CardExpirationYear', 'Email', 'CountryBillingShort' ];
+			headerCSV = headers.join(',') + '\n' + s;
+
+			var rows = [];
+			csv.fromString(CSV_STRING, { headers: true })
+			  .on('data', row => rows.push(row))
+			  .on('end', () => {
+
+			  })
+		},
+		saveFile: function(fileName, data){
+			const fields = Object.keys(data[0]);
+			const opts = { fields, quote:'', header:false };
+
+			try {
+			  const csv = jsonCSVParser(data, opts);
+			  fs.writeFileSync(fileName, csv);
+			} catch (err) {
+			  console.error(err);
+			}
+		}			
 	},
 	'sole_terminator' : {
 		loadFile: io.json.load,
@@ -143,8 +165,8 @@ function convert(sourceFile, targetFile, sourceFormatName, targetFormatName) {
 
 	sourceFormat.loadFile(sourceFile, function(sourceDataRaw) {
 		sourceData = sourceMap.hasOwnProperty('unpack') ? sourceMap.unpack(sourceDataRaw) : sourceDataRaw;
-		var defaultData = sourceData.map((row) => maps[sourceFormatName].intoDefault(row, maps[sourceFormatName].map));
-		var resultDataRaw =  defaultData.map((row) => maps[targetFormatName].fromDefault(row, maps[targetFormatName].map));
+		var defaultData = sourceData.map((row) => maps[sourceFormatName].intoDefault(row, maps[sourceFormatName]));
+		var resultDataRaw =  defaultData.map((row) => maps[targetFormatName].fromDefault(row, maps[targetFormatName]));
 		resultData = targetMap.hasOwnProperty('pack') ? targetMap.pack(resultDataRaw) : resultDataRaw;
 		console.log(resultData)
 		targetFormat.saveFile(targetFile, resultData)

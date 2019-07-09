@@ -29,7 +29,12 @@ var out = {
 //
 //});
 
-converter.convert('formats/aiomoji.csv', 'output/result.txt', 'aiomoji', 'soleaio');
+//converter.convert('formats/aiomoji.csv', 'output/result.txt', 'aiomoji', 'kodai');
+//converter.convert('formats/kodai.json', 'output/result.txt', 'kodai', 'oculus');
+//converter.convert('formats/whatbot.db', 'output/result.txt', 'whatbot', 'oculus');
+converter.convert('formats/yitan.zip', 'output/result.txt', 'yitan', 'eveaio');
+//converter.convert('formats/oculus.json', 'output/result.txt', 'oculus', 'hastey');
+//converter.convert('formats/cyber.json', 'output/result.txt', 'cyber', 'aiomoji');
 //converter.convert('formats/profiles.json', 'output/result.txt', 'profiles', 'hastey');
 //converter.convert('formats/eveaio.xml', 'output/result.txt', 'eveaio', 'aiomoji');
 
